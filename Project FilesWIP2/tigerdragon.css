@@ -1,0 +1,107 @@
+* { box-sizing: border-box; }
+body { background-color: #33ff47; 
+    color: #666666; margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+}
+header { background-color: #002171; 
+    color: #FFFFFF;
+    font-family: Georgia, sans-serif; 
+    padding: 1em; 
+    }
+header a { text-decoration: none;}
+header a:link {color: #FFFFFF;}
+header a:visited {color: #FFFFFF;}
+header a:hover {color: #33ff47;}    
+h1 { text-align: center; 
+ font-size: 1.5em; } 
+nav { font-size: 1.2em; text-align: center; background-color :#FFFFFF;}
+nav a {  text-decoration: none;}
+nav a:link {  color: #5c7fa3;}
+nav a:visited {  color: #344873;}
+nav a:hover {  color: #a52a2a;}
+nav ul { display: flex; 
+    flex-direction: column; 
+    list-style-type: none; padding-left: 0; margin: 0;}
+nav li { padding-top: .5em; padding-bottom: .5em; 
+    padding-left: 1em; padding-right: 1em; width: 100%; 
+    border-bottom: 1px solid;}     
+h2 { color: #1976D2; font-family: Georgia, sans-serif;}
+.center {
+  text-align: center;
+}
+dt { font-weight: bold; color: #002171;}
+.resort {color: #1976D2; font-size: 1.2em;}
+footer {background-color:#ffffff; font-size: .70em; font-style:
+     italic; text-align: center; padding: 1em; }
+h3{font-family: Georgia, sans-serif;}
+main{padding-left: 1em; padding-right: 1em; display: block;
+     padding-top: 0; padding-bottom: 0;}
+#wrapper { background-color: #ffffff; }
+#homehero{ background-image: url(tigerdragon.jpg);
+                 background-repeat: no-repeat;
+                 height: 300px;
+                 background-size: 200% 100%;
+                 }
+#thaisavoryhero{ background-image: url(Thailand1.jpg);
+                 background-repeat: no-repeat;
+                 height: 300px;
+                 background-size: 200% 100%;
+                 }
+#thaivegetarianhero{ background-image: url(trail.jpg);
+                 background-repeat: no-repeat;
+                 height: 300px;
+                 background-size: 200% 100%;
+                 }
+#thaidesserthero{ background-image: url(trail.jpg);
+                  background-repeat: no-repeat;
+                  height: 300px;
+                  background-size: 200% 100%;
+                  }
+#cookingLessonshero{ background-image: url(trail.jpg);
+                    background-repeat: no-repeat;
+                    height: 300px;
+                    background-size: 200% 100%;
+                  }                                    
+section { padding-left: .5em; padding-right: .5em;}
+#mobile{ display: inline; } 
+#desktop{ display: none; } 
+
+
+table { margin: auto;
+  border: 1px solid #33ff47;
+  width: 90%; 
+border-collapse: collapse;
+}
+
+
+td, th {padding: 5px; border: 1px solid #33ff47; }
+td {text-align: center; }
+.text {text-align: left; }
+.text2 {text-align: center; }
+tr:nth-of-type(even) { background-color: #dfedf8; }
+
+
+
+@media (min-width: 600px ) {
+  h1 { font-size: 2em; letter-spacing: .25em; }
+  nav ul { display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-around; padding-right: 2em;}
+  nav li { width: 12em; border-bottom: none;}
+  section { padding-left: 2em; padding-right: 2em;} 
+  #flow { display: flex; flex-direction: row;}
+  #mobile { display: none; } 
+  #desktop { display: inline; }
+  #homehero { background-size: 100% 100%; }
+  #thaisavoryhero { background-size: 100% 100%; }
+  #thaivegetarianhero { background-size: 100% 100%; }
+  #thaideserthero { background-size: 100% 100%; }
+  #cookinglessonshero { background-size: 100% 100%; }
+} 
+
+@media (min-width: 1024px) {
+  body { background-image:  linear-gradient(to bottom, #FFFFFF 20%, #33ff47 60%,
+  #FFFFFF 100%); }
+  nav ul { padding-right: 10%; padding-left: 10%; }
+  #wrapper { margin: auto; width: 80% }
+}  
